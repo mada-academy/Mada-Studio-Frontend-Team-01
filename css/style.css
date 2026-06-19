@@ -1,0 +1,99 @@
+/* Mada Studio design tokens. Reuse these values instead of hard-coding colors. */
+:root {
+  --teal: #0d9488;
+  --navy: #0f172a;
+  --amber: #f59e0b;
+  --mint: #ccfbf1;
+  --white: #ffffff;
+  --surface: #f8fafc;
+  --text-muted: #475569;
+  --container-width: 1120px;
+}
+
+/* A small, predictable responsive reset for every page in this project. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+body {
+  min-width: 320px;
+  background: var(--surface);
+  color: var(--navy);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  width: min(100% - 2rem, var(--container-width));
+  margin-inline: auto;
+}
+
+.site-header,
+.site-footer {
+  background: var(--navy);
+  color: var(--white);
+  padding-block: 1rem;
+}
+
+.brand {
+  color: var(--mint);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.hero,
+.section {
+  padding-block: clamp(3rem, 8vw, 6rem);
+}
+
+.hero {
+  background: var(--mint);
+}
+
+.hero h1 {
+  max-width: 12ch;
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  line-height: 1;
+}
+
+.eyebrow {
+  color: var(--teal);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.section--mint {
+  background: var(--mint);
+}
+
+/* Add component styles below as the team builds new sections. */
+
+@media (min-width: 768px) {
+  .container {
+    width: min(100% - 4rem, var(--container-width));
+  }
+}
