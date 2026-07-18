@@ -8,19 +8,39 @@
       content="Student Showcase Platform — a Mada Studio frontend team project."
     />
     <title>Student Showcase Platform | Mada Studio</title>
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- Build the navigation links and mobile menu here. -->
-    <header class="site-header">
-      <nav class="container" aria-label="Main navigation">
-        <a class="brand" href="index.html">Mada Studio</a>
-      </nav>
-    </header>
+    <nav>
+      <div class="left">
+
+        <div class="logo">
+            <img src="image.png" alt="logo" />
+        </div>
+
+        <h2>Showcase</h2>
+
+        <ul>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </div>
+
+    <div class="right">
+        <a href="#" class="signin">Sign in</a>
+        <button>Submit Project</button>
+    </div>
+</nav>
+
+    
 
     <main>
       <!-- Add the main project message, call to action, and visual here. -->
-      <section id="hero" class="hero">
+      <section id="hero" class="hero-section">
         <div class="container">
           <p class="eyebrow">Student Showcase Platform</p>
           <h1>Ideas made visible.</h1>
@@ -34,12 +54,16 @@
           <div class="developer">
             <h2>Developer</h2>
             <h3>Sondos</h3>
-            <p>Role : Web Developer</p>
-            <p>Skills : HTML, CSS, JavaScript</p>
-            <p>Fav Project : MedConnect</p>
-          </div>
+            <div class="developer-card .info">
+                <p><strong>🌐 Role:</strong> Web Developer</p>
+                <p><strong>💻 Skills:</strong> HTML, CSS, JavaScript</p>
+                <p><strong>⭐ Favorite Project:</strong> MedConnect</p>
+            </div>
+
         </div>
-      </section>
+
+    </div>
+</section>
 
       <!-- Explain the platform, studio, or student community here. -->
       <section id="about" class="section section--mint">
