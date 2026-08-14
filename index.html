@@ -1,83 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta
-      name="description"
-      content="Student Showcase Platform — a Mada Studio frontend team project."
+        name="description"
+        content="Student Showcase Platform — a Mada Studio frontend team project."
     />
+
     <title>Student Showcase Platform | Mada Studio</title>
 
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <!-- Build the navigation links and mobile menu here. -->
-    <nav>
-      <div class="left">
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-        <div class="logo">
-            <img src="Showcase-logo.png" alt="logo" />
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+   <div class="logo">
+    <img src="Showcase-logo.png" alt="Showcase logo">
+    <h2>Showcase</h2>
+   </div>
+
+        <nav class="nav-links">
+            <a href="#">Projects</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="#" class="sign-in">Sign in</a>
+            <a href="#" class="submit-btn">Submit Project</a>
         </div>
 
-        <h2>Showcase</h2>
+    </header>
 
-        <ul>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
 
-    </div>
-
-    <div class="right">
-        <a href="#" class="signin">Sign in</a>
-        <button>Submit Project</button>
-    </div>
-</nav>
-
-    
+    <!-- ================= HERO SECTION ================= -->
 
     <main>
-      <!-- Add the main project message, call to action, and visual here. -->
-      <section id="hero" class="hero-section">
-        <div class="container">
-          <p class="eyebrow">Student Showcase Platform</p>
-          <h1>Ideas made visible.</h1>
-          <p>Use this space to introduce the platform and its purpose.</p>
-        </div>
-      </section>
 
-      <!-- Display student work as cards or a filterable gallery here. -->
-      <section id="projects" class="section">
-        <div class="container">
-          <div class="developer">
-            <h2>Developer</h2>
-            <h3>Sondos</h3>
-            <div class="developer-card .info">
-                <p><strong>🌐 Role:</strong> Web Developer</p>
-                <p><strong>💻 Skills:</strong> HTML, CSS, JavaScript</p>
-                <p><strong>⭐ Favorite Project:</strong> MedConnect</p>
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="projects-badge">
+                    <span class="badge-dot"></span>
+                    <span>2,400+ projects from 180+ universities</span>
+                </div>
+
+                <h1>
+                    Where student builders
+                    <span>ship and get discovered.</span>
+                </h1>
+
+                <p>
+                    Showcase your projects, explore what peers are building, and
+                    connect with recruiters, mentors, and collaborators who care about
+                    your work.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#" class="explore-btn">
+                        Explore Projects
+                        <span>→</span>
+                    </a>
+
+                    <a href="#" class="work-btn">
+                        Submit Your Work
+                    </a>
+
+                </div>
+
             </div>
 
-        </div>
+        </section>
 
-    </div>
-</section>
-
-      <!-- Explain the platform, studio, or student community here. -->
-      <section id="about" class="section section--mint">
-        <div class="container">
-          <h2>About</h2>
-        </div>
-      </section>
     </main>
 
-    <!-- Add contact links, social links, and legal text here. -->
+
+    <!-- ================= FOOTER ================= -->
+
     <footer class="site-footer">
-      <div class="container">© Mada Studio</div>
+        <div class="container">
+            © Mada Studio
+        </div>
     </footer>
 
     <script src="js/main.js"></script>
-  </body>
+
+</body>
 </html>
+```
