@@ -1,75 +1,299 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Sign Up</title>
+
     <link rel="stylesheet" href="../css/Sign-up.css">
 </head>
+
 <body>
+
     <section class="container">
+
         <div class="Signup-Box">
-                <h2>Sign Up</h2>
-                <form>
-                    <div class="Details">
-                        <h3>User Details</h3>
-                        <div class="inputs">
-                                                    
-                    <div class="in">
-                         <label for="Username">First Name</label>
-                <input type="text" id="Username" name="Username" placeholder="Enter Your First Name">
+
+            <!-- LEFT SIDE -->
+            <div class="left-side">
+
+                <div class="logo">
+                    <div class="logo-img">
+                        <img src="Showcase-logo.png" alt="Showcase logo">
+                    </div>
+                    <span>Showcase</span>
+                </div>
+
+                <div class="left-content">
+
+                    <h1>
+                        Join 2,400+ students
+                        already building in public.
+                    </h1>
+
+                    <p>
+                        Submit your projects, get discovered by recruiters,
+                        and connect with peers from 180+ universities
+                        worldwide.
+                    </p>
+
+                </div>
+
+                <div class="testimonial">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        “A recruiter from Stripe found my project and
+                        reached out directly. Showcase changed
+                        everything for me.”
+                    </p>
+
+                    <div class="person">
+
+                        <div class="avatar">
+                            LM
+                        </div>
+
+                        <div>
+                            <h4>Luca Martinelli</h4>
+                            <span>CS Student, ETH Zurich</span>
+                        </div>
 
                     </div>
-                    <div class="in">
-                            <label for="Username">Middle Name</label>
-                <input type="text" id="Username" name="Username" placeholder="Enter Your Middle Name">
-                    </div>
 
-               <div class="in">
-                  <label for="Username">Last Name</label>
-                <input type="text" id="Username" name="Username" placeholder="Enter Your Last Name">
+                </div>
 
-               </div>
-              <div class="in">
-                 <label for="Password">Password</label>
-                <input type="password" id="Password" name="Password" placeholder="Enter Your Password">
-               </div>
-               <div class="in">
-                  <label for="Password">Confirm Password</label>
-                <input type="password" id="Password" name="Password" placeholder="Confirm Your Password">
+            </div>
 
-               </div>
-                    <div class="in">
-                        <label for="Email">Email</label>
-                <input type="email" id="Email" name="Email" placeholder="Enter Your Email">
 
-                    </div> 
-                     <div class="in">
-                         <label for="Phone">Phone Number</label>
-                <input type="tel" id="Phone" name="Phone" placeholder="Enter Your Phone Number">
+            <!-- RIGHT SIDE -->
+            <div class="right-side">
 
-                     </div>
+                <div class="form-content">
 
-                            <div class="in">
-                      <form>
+                    <!-- SIGN IN / CREATE ACCOUNT -->
 
-                        </select>
-            <div class="Address">
-                        <h3>Address</h3>
-                        <div class="inputs">
-                                                    
-                    <div class="in">
-                        <label for="Country">Country</label>
-                <input type="text" id="Country" name="Country" placeholder="Enter Your Country">
+                    <div class="tabs">
+
+                        <a href="Sign-in.html">
+                            Sign in
+                        </a>
+
+                        <button class="active">
+                            Create account
+                        </button>
 
                     </div>
-             
-                <button type="submit">Register</button>
-                
-                </form>
+
+
+                    <h2>
+                        Create your account
+                    </h2>
+
+                    <p class="subtitle">
+                        Join Showcase and start building in public.
+                    </p>
+
+
+                    <!-- FORM -->
+
+                    <form>
+
+                        <!-- USER DETAILS -->
+
+                        <div class="Details">
+
+                            <h3>User Details</h3>
+
+                            <div class="inputs">
+
+                                <!-- First Name -->
+
+                                <div class="in">
+
+                                    <label for="FirstName">
+                                        First Name
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="FirstName"
+                                        name="FirstName"
+                                        placeholder="Enter Your First Name"
+                                    >
+
+                                </div>
+
+
+                                <!-- Middle Name -->
+
+                                <div class="in">
+
+                                    <label for="MiddleName">
+                                        Middle Name
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="MiddleName"
+                                        name="MiddleName"
+                                        placeholder="Enter Your Middle Name"
+                                    >
+
+                                </div>
+
+
+                                <!-- Last Name -->
+
+                                <div class="in">
+
+                                    <label for="LastName">
+                                        Last Name
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="LastName"
+                                        name="LastName"
+                                        placeholder="Enter Your Last Name"
+                                    >
+
+                                </div>
+
+
+                                <!-- Email -->
+
+                                <div class="in">
+
+                                    <label for="Email">
+                                        Email
+                                    </label>
+
+                                    <input
+                                        type="email"
+                                        id="Email"
+                                        name="Email"
+                                        placeholder="Enter Your Email"
+                                    >
+
+                                </div>
+
+
+                                <!-- Password -->
+
+                                <div class="in">
+
+                                    <label for="Password">
+                                        Password
+                                    </label>
+
+                                    <input
+                                        type="password"
+                                        id="Password"
+                                        name="Password"
+                                        placeholder="Enter Your Password"
+                                    >
+
+                                </div>
+
+
+                                <!-- Confirm Password -->
+
+                                <div class="in">
+
+                                    <label for="ConfirmPassword">
+                                        Confirm Password
+                                    </label>
+
+                                    <input
+                                        type="password"
+                                        id="ConfirmPassword"
+                                        name="ConfirmPassword"
+                                        placeholder="Confirm Your Password"
+                                    >
+
+                                </div>
+
+
+                                <!-- Phone -->
+
+                                <div class="in">
+
+                                    <label for="Phone">
+                                        Phone Number
+                                    </label>
+
+                                    <input
+                                        type="tel"
+                                        id="Phone"
+                                        name="Phone"
+                                        placeholder="Enter Your Phone Number"
+                                    >
+
+                                </div>
+
+
+                                <!-- Country -->
+
+                                <div class="in">
+
+                                    <label for="Country">
+                                        Country
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="Country"
+                                        name="Country"
+                                        placeholder="Enter Your Country"
+                                    >
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- REGISTER BUTTON -->
+
+                        <button
+                            type="submit"
+                            class="register-btn"
+                        >
+                            Create account
+                            <span>→</span>
+                        </button>
+
+
+                        <!-- BOTTOM TEXT -->
+
+                        <p class="signin-text">
+
+                            Already have an account?
+
+                            <a href="Sign-in.html">
+                                Sign in
+                            </a>
+
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </div>
 
         </div>
-</section> 
+
+    </section>
+
 </body>
+
 </html>

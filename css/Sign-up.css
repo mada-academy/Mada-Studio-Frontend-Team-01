@@ -1,37 +1,515 @@
-.Signup-Box h2 {
-    text-align: center;
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: #172033;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.Signup-Box {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+}
+
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.left-side {
+    width: 31%;
+    min-height: 100vh;
+
+    padding: 40px 34px;
+
+    position: relative;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(9, 25, 45, 0.97),
+            rgba(9, 25, 45, 0.97)
+        ),
+        repeating-linear-gradient(
+            90deg,
+            transparent 0,
+            transparent 39px,
+            rgba(255, 255, 255, 0.04) 40px
+        );
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+
+/* =========================
+   LEFT TEXT
+========================= */
+
+.left-content {
+    margin-top: 65px;
+}
+
+.left-content h1 {
+    max-width: 390px;
+
+    font-size: 27px;
+    line-height: 1.2;
+
+    margin-bottom: 18px;
+}
+
+.left-content p {
+    max-width: 370px;
+
+    color: #8492a8;
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   TESTIMONIAL
+========================= */
+
+.testimonial {
+    position: absolute;
+
+    left: 32px;
+    right: 32px;
+    bottom: 32px;
+
+    padding: 24px;
+
+    border: 1px solid rgba(255, 255, 255, 0.14);
+
+    border-radius: 17px;
+
+    background-color: rgba(255, 255, 255, 0.035);
+}
+
+.stars {
+    color: #ffd447;
+
+    font-size: 17px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.testimonial > p {
+    color: #d5dbe4;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
     margin-bottom: 20px;
 }
-.inputs{
-     display: flex;
- justify-content: space-between;
- flex-wrap: wrap;
-}
-form .in{
 
- width: 30%;
- margin: 10px;
+
+/* =========================
+   PERSON
+========================= */
+
+.person {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
 }
-.Signup-Box .btn{
+
+.avatar {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #555d68;
+
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.person h4 {
+    font-size: 12px;
+
+    margin-bottom: 4px;
+}
+
+.person span {
+    color: #718096;
+
+    font-size: 10px;
+}
+
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.right-side {
+    width: 69%;
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 30px;
+
+    background-color: white;
+}
+
+
+/* =========================
+   FORM CONTENT
+========================= */
+
+.form-content {
+    width: 620px;
+    max-width: 100%;
+}
+
+
+/* =========================
+   TABS
+========================= */
+
+.tabs {
     width: 100%;
-    margin-top: 20px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 4px;
+
+    margin-bottom: 30px;
+
+    background-color: #f5f7fa;
+
+    border-radius: 12px;
 }
-.btn{
-    background-color: #009688;
-    color: white;
-    padding: 10px 20px;
+
+.tabs a,
+.tabs button {
+    width: 50%;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     border: none;
-    border-radius: 5px;
+    border-radius: 9px;
+
+    background-color: transparent;
+
+    color: #7b8491;
+
+    font-size: 14px;
+
+    text-decoration: none;
+
     cursor: pointer;
 }
-.form .in input{
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f7f7f7;
+
+
+/* Active tab */
+
+.tabs .active {
+    background-color: white;
+
+    color: #222b38;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.08);
 }
-.form{
-    background-color: blueviolet;
-    padding: 20px;
+
+
+/* =========================
+   HEADING
+========================= */
+
+.form-content h2 {
+    color: #162033;
+
+    font-size: 25px;
+
+    margin-bottom: 7px;
+}
+
+.subtitle {
+    color: #8b929d;
+
+    font-size: 14px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   DETAILS
+========================= */
+
+.Details h3 {
+    display: none;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+.inputs {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 17px 18px;
+}
+
+
+/* =========================
+   EACH INPUT
+========================= */
+
+.inputs .in {
+    width: 100%;
+
+    margin: 0;
+}
+
+
+/* =========================
+   LABEL
+========================= */
+
+.inputs .in label {
+    display: block;
+
+    color: #303947;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   INPUT BOX
+========================= */
+
+.inputs .in input {
+    width: 100%;
+    height: 47px;
+
+    padding: 0 13px;
+
+    border: 1px solid #dfe3e8;
+
+    border-radius: 9px;
+
+    background-color: white;
+
+    outline: none;
+
+    color: #303947;
+
+    font-size: 13px;
+
+    transition: 0.2s ease;
+}
+
+
+/* =========================
+   PLACEHOLDER
+========================= */
+
+.inputs .in input::placeholder {
+    color: #b5bbc3;
+}
+
+
+/* =========================
+   INPUT FOCUS
+========================= */
+
+.inputs .in input:focus {
+    border-color: #17a39a;
+
+    box-shadow:
+        0 0 0 3px rgba(23, 163, 154, 0.08);
+}
+
+
+/* =========================
+   REGISTER BUTTON
+========================= */
+
+.register-btn {
+    width: 100%;
+    height: 50px;
+
+    margin-top: 24px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background-color: #16a398;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #128f86;
+}
+
+.register-btn span {
+    margin-left: 7px;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   SIGN IN TEXT
+========================= */
+
+.signin-text {
+    text-align: center;
+
+    margin-top: 20px;
+
+    color: #9299a3;
+
+    font-size: 13px;
+}
+
+.signin-text a {
+    color: #149c92;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .Signup-Box {
+        flex-direction: column;
+    }
+
+    .left-side {
+        width: 100%;
+
+        min-height: 430px;
+    }
+
+    .right-side {
+        width: 100%;
+
+        min-height: auto;
+    }
+
+    .testimonial {
+        position: relative;
+
+        left: auto;
+        right: auto;
+        bottom: auto;
+
+        margin-top: 35px;
+    }
+
+    .left-content {
+        margin-top: 45px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .left-side {
+        padding: 28px 22px;
+    }
+
+    .left-content h1 {
+        font-size: 23px;
+    }
+
+    .inputs {
+        grid-template-columns: 1fr;
+    }
+
+    .right-side {
+        padding: 35px 20px;
+    }
 }
